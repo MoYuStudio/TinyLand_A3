@@ -1,0 +1,36 @@
+
+MoYuGameFrame (MYGF)
+摸鱼游戏架构 (基于Godot引擎架构改)
+
+assets
+
+core 引擎核心
+    config 配置文件
+    input 输入
+    io 数据读写
+    math 算法
+    object 对象
+    templates 模板
+
+doc 文档
+
+driver 驱动
+    json
+    ogg
+    png
+
+main 游戏文件
+    app_icon.png 游戏图标
+    main.py 游戏主文件
+
+misc 其他文件
+
+modules
+
+scene 场景
+    game 游戏场景
+    menu 菜单场景
+
+tests 测试文件
+    测试签注 test_
+    架构和文件目录和自身一样
