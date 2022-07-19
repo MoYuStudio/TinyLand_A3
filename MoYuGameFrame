@@ -18,6 +18,7 @@ driver 驱动
     json
     ogg
     png
+    yaml
 
 main 游戏文件
     app_icon.png 游戏图标
