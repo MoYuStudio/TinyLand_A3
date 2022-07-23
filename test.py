@@ -1,17 +1,23 @@
-from raylib import *
 
-InitWindow(800, 450, b"Hello Raylib")
-SetTargetFPS(60)
+from rlzero import *
 
-SetCameraMode(Camera2D, CAMERA_ORBITAL)
+WIDTH = 800
+HEIGHT = 640
+CAMERA = CAMERA_FIRST_PERSON
+DATA_DIR = "examples/models/resources/models/"
 
-while not WindowShouldClose():
-    UpdateCamera(Camera2D)
-    
-    BeginDrawing()
-    
-    ClearBackground((255,255,255))
-    DrawText(b"Hellow World", 0, 0, 0, (0,255,255))
-    
-    EndDrawing()
-CloseWindow()
+cube = Cube((0, 10, 0), (10, 20, 10), BLUE)
+
+
+def draw3d():
+    clear()
+    cube.draw()
+
+
+def update():
+    cube.x = cube.x + 1
+    if cube.x > 100:
+        cube.x = -100
+
+
+run()

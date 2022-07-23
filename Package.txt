@@ -4,11 +4,11 @@
 # ==================
 
 # Python 3.8.10
-# pip3 install -r data/txt/package.txt
-# pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r data/txt/package.txt
+# pip3 install -r Package.txt
+# pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r Package.txt
 
 # Basis Universal
-pygame == 2.1.2
+raylib == 4.0.0.6
 
 # Core / Math
 noise == 1.2.2
